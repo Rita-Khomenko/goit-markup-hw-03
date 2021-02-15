@@ -16,6 +16,11 @@
   overflow: hidden;
 }
 
+.portfolio .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .btn {
   font-weight: 500;
   font-size: 16px;
@@ -25,8 +30,22 @@
   cursor: pointer;
 }
 
+.btn.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 50px;
+}
+
+.btn.list > li:not(:last-child) {
+  margin-right: 8px;
+}
+
 .btn .secondary {
   background-color: var(--background-team);
+
+  padding: 6px 22px;
 }
 
 .btn .secondary:hover,
@@ -51,6 +70,31 @@
   color: var(--text-grey);
 }
 
-.logo.white {
+.project.list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.project.list > .project-item {
+  flex-basis: calc(100% / 3 - 30px);
+
+  margin-left: 30px;
+  margin-top: 30px;
+
+  border: 1px solid var(--border-colour);
+}
+
+.card-text {
+  padding: 20px 24px;
+}
+
+.project-heading {
+  margin-bottom: 4px;
+}
+
+. . .logo.white {
   color: var(--text-white);
 }
