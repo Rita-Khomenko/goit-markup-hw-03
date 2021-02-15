@@ -1,0 +1,90 @@
+.logo.black {
+  color: var(--text-black);
+}
+
+.hero {
+  background-color: var(--background-hero);
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.hero .hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  color: var(--text-white);
+}
+
+.hero .btn.primary {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--text-white);
+  cursor: pointer;
+}
+
+.content {
+  background-color: #ffffff;
+  letter-spacing: 0.03em;
+}
+
+.content-heading {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  color: var(--text-graphit);
+}
+
+.content-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-grey);
+}
+
+.promo {
+  background-color: var(--text-white);
+  letter-spacing: 0.03em;
+}
+
+.promo-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(text-graphit);
+}
+
+.team {
+  background-color: var(--background-team);
+  letter-spacing: 0.03em;
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--text-graphit);
+}
+
+.team-heading {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--text-graphit);
+}
+
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--text-grey);
+}
+
+.logo.white {
+  color: var(--text-white);
+}
