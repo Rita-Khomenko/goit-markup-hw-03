@@ -1,0 +1,404 @@
+/* Common.css */
+:root {
+  --text-blue: #2196f3;
+  --text-black: #000000;
+  --text-graphit: #212121;
+  --text-grey: #757575;
+  --text-white: #ffffff;
+  --text-grey-opacity: rgba(255, 255, 255, 0.6);
+  --background-hero: #2f303a;
+  --background-team: #f5f4fa;
+  --border-colour: #eeeeee;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  background-color: var(--text-white);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.header-nav,
+.site-nav,
+.site-info {
+  display: flex;
+}
+
+.header-nav {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav > a {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.site-nav a,
+.site-info a {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.site-nav li {
+  margin-left: 50px;
+}
+
+.site-info li:last-child {
+  margin-left: 50px;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--text-blue);
+}
+
+.site-nav .link {
+  color: var(--text-graphit);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--text-blue);
+  cursor: pointer;
+}
+
+.site-nav .link.current {
+  color: var(--text-blue);
+}
+
+.site-info .link {
+  color: var(--text-grey);
+}
+
+.site-info .link:hover,
+.site-info .link:focus {
+  color: var(--text-blue);
+  cursor: pointer;
+}
+
+button {
+  border: none;
+}
+
+.footer {
+  background-color: var(--background-hero);
+  letter-spacing: 0.03em;
+}
+
+.address-list .link {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-grey-opacity);
+}
+
+.address-list .link:hover,
+.address-list .link:focus {
+  color: var(--text-blue);
+}
+
+.address-list .street {
+  color: var(--text-white);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container > a {
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.address-list a {
+  display: inline-block;
+  justify-content: flex-start;
+}
+
+.address-list li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo.black {
+  color: var(--text-black);
+}
+
+.logo.white {
+  color: var(--text-white);
+}
+
+/* Index.css */
+.hero {
+  background-color: var(--background-hero);
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  color: var(--text-white);
+
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--text-white);
+  cursor: pointer;
+
+  padding: 5px 32px;
+}
+
+.content {
+  background-color: #ffffff;
+  letter-spacing: 0.03em;
+}
+
+.content .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.content-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-list > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.content-heading {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  color: var(--text-graphit);
+}
+
+.content-heading {
+  margin-bottom: 10px;
+}
+
+.content-text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-grey);
+}
+
+.promo {
+  background-color: var(--text-white);
+  letter-spacing: 0.03em;
+}
+
+.promo-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(text-graphit);
+}
+
+.promo .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.promo-title {
+  margin-bottom: 50px;
+}
+
+.promo-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-list > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.promo-img {
+  max-width: 370px;
+}
+
+.team {
+  background-color: var(--background-team);
+  letter-spacing: 0.03em;
+}
+
+.team .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--text-graphit);
+}
+
+.team-title {
+  margin-bottom: 50px;
+}
+
+.team-heading {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--text-graphit);
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--text-grey);
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-list > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-img {
+  margin-bottom: 30px;
+  max-width: 270px;
+}
+
+.team-heading {
+  margin-bottom: 10px;
+}
+
+/* Portfolio.css */
+.portfolio .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: var(--text-graphit);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 50px;
+}
+
+.btn > li:not(:last-child) {
+  margin-right: 8px;
+}
+
+.btn.secondary {
+  background-color: var(--background-team);
+
+  padding: 6px 22px;
+}
+
+.btn.secondary:hover,
+.btn.secondary:focus {
+  color: var(--text-white);
+  background-color: var(--text-blue);
+}
+
+.project-heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--text-graphit);
+}
+
+.project-text {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--text-grey);
+}
+
+.project.list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.project.list > .project-item {
+  flex-basis: calc(100% / 3 - 30px);
+
+  margin-left: 30px;
+  margin-top: 30px;
+
+  border: 1px solid var(--border-colour);
+}
+
+.card-text {
+  padding: 20px 24px;
+}
+
+.project-heading {
+  margin-bottom: 4px;
+}
